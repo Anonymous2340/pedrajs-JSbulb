@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bulb.css">
+    <link rel="icon" type="image/x-icon" href="/IMAGE BACKGROUNDS/incognito.png">
+    <title>Bulb Off/On</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Turn OFF / ON Lightbulb:</h1>
+        <div class="img-container">
+            <img src="bulboff.png" alt="A bulb turned off..." id="imgbulb">
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="onBtn()"  type="button">ON</button>
+            <button class="btn" onclick="offBtn()"  type="button">OFF</button>
+        </div>
+    </div>
+</body>
+<script>
+    function onBtn() {
+        document.getElementById('imgbulb').src='bulbon.png';
+    }
+
+    function offBtn() {
+        document.getElementById('imgbulb').src='bulboff.png';
+    }
+</script>
+</html>
